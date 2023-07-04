@@ -222,7 +222,7 @@ song_11 : "Đã bắt đầu tải lên\n\nTốc độ tải lên có thể ch�
 queue_1 : "Vui lòng đợi..Hàng đợi tìm nạp.."
 queue_2 : "Danh sách xếp hàng trống. Không tìm thấy bản nhạc nào"
 queue_3 : "<u>**Bản nhạc được xếp hàng:</u>** [Kiểm tra các bản nhạc được xếp hàng khác từ đây]({0})"
-queue_4 : "⏳ Đã thêm vào Hàng đợi lúc **#{0}\n\n💡Tiêu đề:** {1}\n**⏱Thời lượng:** {2}\n👤**Thêm bởi:** {3 }"
+queue_4 :  "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2}\n👤**Added By:** {3}"
 queue_5 : "Chỉ có một bản nhạc trong hàng đợi, Vui lòng thêm một số bản nhạc khác vào danh sách kiểm tra"
 
 # All Streaming Lines
