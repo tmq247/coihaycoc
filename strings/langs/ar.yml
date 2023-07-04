@@ -109,35 +109,35 @@ set_cb_7 : "Đang lấy danh sách người dùng xác thực.. VUI LÒNG CHỜ.
 set_cb_8 : "Quay lại.."
 
 # Misc
-ustats_1 : "No User Stats Found."
-ustats_2 : "Greetings!, You have played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop {2} played by you:\n\n"
+ustats_1 : "Không tìm thấy thống kê người dùng."
+ustats_2 : "Xin chào!, Bạn đã chơi các bản nhạc **{0}** cho đến bây giờ với số lần khổng lồ là **{1}** lần.\n\n{2} đầu tiên do bạn chơi:\n\n"
 
-gstats_1 : "Getting Global Stats, This could take some time..."
-gstats_2 : "No Stats Found."
-gstats_3 : "Getting Global Top 10 {0} on the bot, This could take some time.."
-gstats_4 : "**Total Queries on Bot:** {0}\n\n{1} has played **{2}** tracks till now with a whopping count of **{3}** times.\n\n**Top {4} Tracks:**\n"
-gstats_5 : "**Top {0} Chats of {1}:**\n\n"
-gstats_6 : "**Top {0} Users of {1}:**\n\n"
-gstats_7 : "This chat group has played **{0}** tracks till now with a whopping count of **{1}** times.\n\nTop {2} played by this chat group:\n\n"
-gstats_8 : "Getting Bot's general stats and information.. This could take some time..."
-gstats_9 : "**GLOBAL TOP 10 STATS OF THE BOT**\n\nSelect the buttons from below for which you want to check global stats from bot's servers."
-gstats_10 : "**Global Stats of {0}**\n\nSelect the buttons from below for which you want to check global stats from bot's servers."
-gstats_11 : "**General Stats of {0}**\nSelect the buttons from below for which you want to check global stats from bot's servers.\n\nTo check top tracks, chats, users and other stuffs, please use /gstats"
+gstats_1 : "Nhận Thống kê Toàn cầu, Quá trình này có thể mất chút thời gian..."
+gstats_2 : "Không tìm thấy thống kê."
+gstats_3 : "Đạt Top 10 toàn cầu {0} trên bot, Quá trình này có thể mất chút thời gian.."
+gstats_4 : "**Tổng số truy vấn trên Bot:** {0}\n\n{1} đã phát các bản nhạc **{2}** cho đến bây giờ với số lần khổng lồ là **{3}** lần.\n \n**Bản nhạc {4} hàng đầu:**\n"
+gstats_5 : "**{0} Trò chuyện hàng đầu của {1}:**\n\n"
+gstats_6 : "**{0} Người dùng hàng đầu của {1}:**\n\n"
+gstats_7 : "Nhóm trò chuyện này đã phát các bản nhạc **{0}** cho đến bây giờ với số lần khổng lồ là **{1}** lần.\n\n{2} đầu tiên được chơi bởi nhóm trò chuyện này:\n\n"
+gstats_8 : "Nhận thông tin và số liệu thống kê chung của Bot.. Quá trình này có thể mất chút thời gian..."
+gstats_9 : "**10 THỐNG KÊ HÀNG ĐẦU TOÀN CẦU CỦA BOT**\n\nChọn các nút bên dưới mà bạn muốn kiểm tra số liệu thống kê toàn cầu từ máy chủ của bot."
+gstats_10 : "**Số liệu thống kê toàn cầu của {0}**\n\nChọn các nút bên dưới mà bạn muốn kiểm tra số liệu thống kê toàn cầu từ máy chủ của bot."
+gstats_11 : "**Số liệu thống kê chung của {0}**\nChọn các nút bên dưới mà bạn muốn kiểm tra số liệu thống kê toàn cầu từ máy chủ của bot.\n\nĐể kiểm tra các bản nhạc, cuộc trò chuyện, người dùng hàng đầu và các nội dung khác, vui lòng sử dụng /gstats "
 
 
 # Play 
 
 #Play Callback 
-playcb_1 : "This is not for you! Search You Own Song."
-playcb_2 : "Getting Next Result"
+playcb_1 : "Cái này không dành cho bạn! Tìm bài hát của riêng bạn."
+playcb_2 : "Nhận kết quả tiếp theo"
 
 # Channel Play
-cplay_1 : "You can play music in channels from this chat[{0}] to any channel or your chat's linked channel.\n\n**For linked channel:**\n`/{1} linked`\n\n**For any other channel:**\n`/{1} [Channel ID]`"
-cplay_2 : "This chat has no linked channel."
-cplay_3 : "Channel Defined to {0}\n\n__Channel ID__: {1}"
-cplay_4 : "Failed to get channel.\n\nMake sure you have added bot in your channel and promoted it as admin.\nEdit or Change channel via /channelplay"
-cplay_5 : "Only Channels are supported."
-cplay_6 : "You need to be the **Owner** of the channel[{0}] to connect it with this group.\n**Channel's Owner:** @{1}\n\nAlternatively you can link your group to that channel and then try connnecting with `/channelplay linked`"
+cplay_1 : "Bạn có thể phát nhạc trong các kênh từ cuộc trò chuyện này[{0}] đến bất kỳ kênh nào hoặc kênh được liên kết trong cuộc trò chuyện của bạn.\n\n**Đối với kênh được liên kết:**\n`/{1} được liên kết`\n\ n**Đối với bất kỳ kênh nào khác:**\n`/{1} [ID kênh]`"
+cplay_2 : "Cuộc trò chuyện này không có kênh được liên kết."
+cplay_3 : "Kênh được xác định cho {0}\n\n__ID kênh__: {1}"
+cplay_4 : "Không nhận được kênh.\n\nHãy đảm bảo rằng bạn đã thêm bot vào kênh của mình và thăng cấp bot đó với tư cách quản trị viên.\nChỉnh sửa hoặc Thay đổi kênh qua /channelplay"
+cplay_5 : "Chỉ Kênh được hỗ trợ."
+cplay_6 : "Bạn cần phải là **Chủ sở hữu** của kênh[{0}] để kết nối kênh với nhóm này.\n**Chủ sở hữu kênh:** @{1}\n\nNgoài ra, bạn có thể liên kết nhóm của mình với kênh đó và sau đó thử kết nối với `/channelplay được liên kết`"
 
 #Play
 play_1 : "🔄 Đang xử lý truy vấn... Vui lòng đợi!"
@@ -347,14 +347,14 @@ block_6 : "Lấy danh sách người dùng bị chặn.. Vui lòng đợi"
 block_7 : "**Người dùng bị chặn:**\n\n"
 
 #Blacklist Chats
-black_1 : "**Usage:**\n/blacklistchat [CHAT_ID]"
-black_2 : "Chat is already blacklisted."
-black_3 : "Chat has been successfully blacklisted"
-black_4 : "**Usage:**\n/whitelistchat [CHAT_ID]"
-black_5 : "Chat is already whitelisted."
-black_6 : "Chat has been successfully whitelisted"
-black_7 : "**Blacklisted Chats:**\n\n"
-black_8 : "No Blacklisted Chats"
+black_1 : "**Cách sử dụng:**\n/blacklistchat [CHAT_ID]"
+black_2 : "Trò chuyện đã được đưa vào danh sách đen."
+black_3 : "Trò chuyện đã được đưa vào danh sách đen thành công"
+black_4 : "**Cách sử dụng:**\n/whitelistchat [CHAT_ID]"
+black_5 : "Trò chuyện đã được đưa vào danh sách cho phép."
+black_6 : "Trò chuyện đã được đưa vào danh sách trắng thành công"
+black_7 : "**Trò chuyện trong danh sách đen:**\n\n"
+black_8 : "Không có cuộc trò chuyện nào trong danh sách đen"
 
 #videolimit
 vid_1 : "**Sử dụng:**\n/set_video_limit [Số lần trò chuyện được phép] hoặc [Tắt]"
@@ -418,17 +418,17 @@ pbot_13 : "\n**<b>Trò chuyện chưa tải:</b>**\n\n"
 
 
 #Gbanned
-gban_1 : "You want to gban yourself? How Fool!"
-gban_2 : "Should i block myself? Lol"
-gban_3 : "You want to block a sudo user?"
-gban_4 : "{0} is already **gbanned** from the bot."
-gban_5 : "**Initializing Global Ban on {0}**\n\nExpected Time : {1}."
-gban_6 : "**Gbanned Successfully**\n\nBanned **{0}** from **{1}** chats."
-gban_7 : "{0} is not **gbanned **yet from the bot."
-gban_8 : "**Ungbanning {0}**\n\nExpected Time : {1}."
-gban_9 : "**UnGbanned Successfully**\n\nUnbanned **{0}** in **{1}** chats."
-gban_10 : "No Gbanned Users Found."
-gban_11 : "Please wait a while.. Fetching Gbanned users list"
+gban_1 : "Bạn muốn gban chính mình? Thật ngu ngốc!"
+gban_2 : "Tôi có nên tự chặn mình không? Lol"
+gban_3 : "Bạn muốn chặn người dùng sudo?"
+gban_4 : "{0} đã bị **gban** khỏi bot."
+gban_5 : "**Đang khởi tạo lệnh cấm toàn cầu vào {0}**\n\nThời gian dự kiến: {1}."
+gban_6 : "**Đã cấm thành công**\n\nĐã cấm **{0}** khỏi các cuộc trò chuyện **{1}**."
+gban_7 : "{0} vẫn chưa **gban ** khỏi bot."
+gban_8 : "**Hủy cấm {0}**\n\nThời gian dự kiến: {1}."
+gban_9 : "**Đã bỏ cấm thành công**\n\nĐã bỏ cấm **{0}** trong các cuộc trò chuyện **{1}**."
+gban_10 : "Không tìm thấy người dùng bị Gban."
+gban_11 : "Vui lòng đợi một lúc.. Đang tìm nạp danh sách người dùng bị Gban"
 
 #Suggestions
 sug_0 : "❓**Bạn Biết Không?**\n\n✅"
