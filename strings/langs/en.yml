@@ -83,7 +83,7 @@ start_7 : "**Trò chuyện trong danh sách đen**\n\nTrò chuyện của bạn 
 
 # Help
 help_1 : "Nhấp vào các nút bên dưới để biết thêm thông tin. Nếu gặp bất kỳ vấn đề nào trong lệnh, bạn có thể liên hệ với chủ sở hữu bot của tôi hoặc hỏi trong cuộc trò chuyện hỗ trợ.\n\nCó thể sử dụng tất cả các lệnh với: /"
-help_2 : "Liên hệ với tôi trong PM để được giúp đỡ."
+help_2 : "Liên hệ với tôi trong IB để được giúp đỡ."
 
 # Settings
 setting_1 : "⚙️ **Cài đặt bot âm nhạc**\n\n🖇**Nhóm:** {0}\n🔖**ID nhóm:** `{1}`\n\n💡**Chọn chức năng các nút bên dưới mà bạn muốn chỉnh sửa hoặc thay đổi.**"
@@ -222,7 +222,7 @@ song_11 : "Đã bắt đầu tải lên\n\nTốc độ tải lên có thể ch�
 queue_1 : "Vui lòng đợi..Hàng đợi tìm nạp.."
 queue_2 : "Danh sách xếp hàng trống. Không tìm thấy bản nhạc nào"
 queue_3 : "<u>**Bản nhạc được xếp hàng:</u>** [Kiểm tra các bản nhạc được xếp hàng khác từ đây]({0})"
-queue_4 :  "⏳ Added to Queue at **#{0}\n\n💡Title:** {1}\n**⏱Duration:** {2}\n👤**Added By:** {3}"
+queue_4 :  "⏳ Đã thêm vào hàng đợi thứ **#{0}\n\n💡Tiêu đề:** {1}\n**⏱Thời lượng:** {2}\n👤**Được thêm bởi:** {3}"
 queue_5 : "Chỉ có một bản nhạc trong hàng đợi, Vui lòng thêm một số bản nhạc khác vào danh sách kiểm tra"
 
 # All Streaming Lines
