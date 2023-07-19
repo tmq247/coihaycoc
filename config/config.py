@@ -28,12 +28,12 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 # Custom max audio(music) duration for voice chat. set DURATION_LIMIT in variables with your own time(mins), Default to 60 mins.
 DURATION_LIMIT_MIN = int(
-    getenv("DURATION_LIMIT", "600")
+    getenv("DURATION_LIMIT", "999999999")
 )  # Remember to give value in Minutes
 
 # Duration Limit for downloading Songs in MP3 or MP4 format from bot
 SONG_DOWNLOAD_DURATION = int(
-    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "600")
+    getenv("SONG_DOWNLOAD_DURATION_LIMIT", "999999999")
 )  # Remember to give value in Minutes
 
 # You'll need a Private Group ID for this.
@@ -97,7 +97,7 @@ PRIVATE_BOT_MODE = getenv("PRIVATE_BOT_MODE", None)
 YOUTUBE_DOWNLOAD_EDIT_SLEEP = int(getenv("YOUTUBE_EDIT_SLEEP", "3"))
 
 # Time sleep duration For Telegram Downloader
-TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
+TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "3"))
 
 # Your Github Repo.. Will be shown on /start Command
 GITHUB_REPO = getenv("GITHUB_REPO", None)
@@ -110,10 +110,10 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", None)
 VIDEO_STREAM_LIMIT = int(getenv("VIDEO_STREAM_LIMIT", "3"))
 
 # Maximum Limit Allowed for users to save playlists on bot's server
-SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "30"))
+SERVER_PLAYLIST_LIMIT = int(getenv("SERVER_PLAYLIST_LIMIT", "50"))
 
 # MaximuM limit for fetching playlist's track from youtube, spotify, apple links.
-PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "25"))
+PLAYLIST_FETCH_LIMIT = int(getenv("PLAYLIST_FETCH_LIMIT", "50"))
 
 # Cleanmode time after which bot will delete its old messages from chats
 CLEANMODE_DELETE_MINS = int(
@@ -124,11 +124,11 @@ CLEANMODE_DELETE_MINS = int(
 # Telegram audio  and video file size limit
 
 TG_AUDIO_FILESIZE_LIMIT = int(
-    getenv("TG_AUDIO_FILESIZE_LIMIT", "419430400")
+    getenv("TG_AUDIO_FILESIZE_LIMIT", "41943040000")
 )  # Remember to give value in bytes
 
 TG_VIDEO_FILESIZE_LIMIT = int(
-    getenv("TG_VIDEO_FILESIZE_LIMIT", "4194304000")
+    getenv("TG_VIDEO_FILESIZE_LIMIT", "419430400000")
 )  # Remember to give value in bytes
 
 # Chceckout https://www.gbmb.org/mb-to-bytes  for converting mb to bytes
@@ -247,28 +247,28 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(
 if SUPPORT_CHANNEL:
     if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
         print(
-            "[ERROR] - Your SUPPORT_CHANNEL url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - URL SUPPORT_CHANNEL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
 if SUPPORT_GROUP:
     if not re.match("(?:http|https)://", SUPPORT_GROUP):
         print(
-            "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - URL SUPPORT_GROUP của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
 if UPSTREAM_REPO:
     if not re.match("(?:http|https)://", UPSTREAM_REPO):
         print(
-            "[ERROR] - Your UPSTREAM_REPO url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - Url UPSTREAM_REPO của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
 if GITHUB_REPO:
     if not re.match("(?:http|https)://", GITHUB_REPO):
         print(
-            "[ERROR] - Your GITHUB_REPO url is wrong. Please ensure that it starts with https://"
+            "[ERROR] - Url GITHUB_REPO của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
@@ -277,7 +277,7 @@ if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
-                "[ERROR] - Your PING_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url PING_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -285,7 +285,7 @@ if PLAYLIST_IMG_URL:
     if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
-                "[ERROR] - Your PLAYLIST_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url PLAYLIST_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -293,7 +293,7 @@ if GLOBAL_IMG_URL:
     if GLOBAL_IMG_URL != "assets/Global.jpeg":
         if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
             print(
-                "[ERROR] - Your GLOBAL_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url GLOBAL_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -302,7 +302,7 @@ if STATS_IMG_URL:
     if STATS_IMG_URL != "assets/Stats.jpeg":
         if not re.match("(?:http|https)://", STATS_IMG_URL):
             print(
-                "[ERROR] - Your STATS_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url STATS_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -311,7 +311,7 @@ if TELEGRAM_AUDIO_URL:
     if TELEGRAM_AUDIO_URL != "assets/Audio.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
             print(
-                "[ERROR] - Your TELEGRAM_AUDIO_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url TELEGRAM_AUDIO_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -320,7 +320,7 @@ if STREAM_IMG_URL:
     if STREAM_IMG_URL != "assets/Stream.jpeg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
-                "[ERROR] - Your STREAM_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url STREAM_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -329,7 +329,7 @@ if SOUNCLOUD_IMG_URL:
     if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
-                "[ERROR] - Your SOUNCLOUD_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url SOUNCLOUD_IMG_URL của bạn sai. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -337,7 +337,7 @@ if YOUTUBE_IMG_URL:
     if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
-                "[ERROR] - Your YOUTUBE_IMG_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url YOUTUBE_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -346,13 +346,13 @@ if TELEGRAM_VIDEO_URL:
     if TELEGRAM_VIDEO_URL != "assets/Video.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
             print(
-                "[ERROR] - Your TELEGRAM_VIDEO_URL url is wrong. Please ensure that it starts with https://"
+                "[ERROR] - Url TELEGRAM_VIDEO_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
 
 if not MUSIC_BOT_NAME.isascii():
     print(
-        "[ERROR] - You've defined MUSIC_BOT_NAME wrong. Please don't use any special characters or Special font for this... Keep it simple and small."
+        "[ERROR] - Bạn đã xác định sai MUSIC_BOT_NAME. Vui lòng không sử dụng bất kỳ ký tự đặc biệt hoặc phông chữ Đặc biệt nào cho điều này... Giữ cho nó đơn giản và nhỏ."
     )
     sys.exit()
