@@ -51,7 +51,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 async def executor(client, message):
     if len(message.command) < 2:
         return await edit_or_reply(
-            message, text="__Nigga Give me some command to execute.__"
+            message, text="__Nigga Hãy cho tôi một số lệnh để thực hiện.__"
         )
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
@@ -80,7 +80,7 @@ async def executor(client, message):
         evaluation = stdout
     else:
         evaluation = "Success"
-    final_output = f"**OUTPUT**:\n```{evaluation.strip()}```"
+    final_output = f"**ĐẦU RA**:\n```{evaluation.strip()}```"
     if len(final_output) > 4096:
         filename = "output.txt"
         with open(filename, "w+", encoding="utf8") as out_file:
@@ -98,7 +98,7 @@ async def executor(client, message):
         )
         await message.reply_document(
             document=filename,
-            caption=f"**INPUT:**\n`{cmd[0:980]}`\n\n**OUTPUT:**\n`Attached Document`",
+            caption=f"**ĐẦU VÀO:**\n`{cmd[0:980]}`\n\n**ĐẦU RA:**\n`Tài liệu đính kèm`",
             quote=False,
             reply_markup=keyboard,
         )
@@ -159,7 +159,7 @@ async def forceclose_command(_, CallbackQuery):
 async def shellrunner(client, message):
     if len(message.command) < 2:
         return await edit_or_reply(
-            message, text="**Usage:**\n/sh git pull"
+            message, text="**Cách sử dụng:**\n/sh git pull"
         )
     text = message.text.split(None, 1)[1]
     if "\n" in text:
@@ -178,7 +178,7 @@ async def shellrunner(client, message):
             except Exception as err:
                 print(err)
                 await edit_or_reply(
-                    message, text=f"**ERROR:**\n```{err}```"
+                    message, text=f"**LỖI:**\n```{err}```"
                 )
             output += f"**{code}**\n"
             output += process.stdout.read()[:-1].decode("utf-8")
@@ -202,7 +202,7 @@ async def shellrunner(client, message):
                 tb=exc_tb,
             )
             return await edit_or_reply(
-                message, text=f"**ERROR:**\n```{''.join(errors)}```"
+                message, text=f"**LỖI:**\n```{''.join(errors)}```"
             )
         output = process.stdout.read()[:-1].decode("utf-8")
     if str(output) == "\n":
@@ -219,7 +219,7 @@ async def shellrunner(client, message):
             )
             return os.remove("output.txt")
         await edit_or_reply(
-            message, text=f"**OUTPUT:**\n```{output}```"
+            message, text=f"**ĐẦU RA:**\n```{output}```"
         )
     else:
-        await edit_or_reply(message, text="**OUTPUT: **\n`No output`")
+        await edit_or_reply(message, text="**ĐẦU RA: **\n`No output`")
