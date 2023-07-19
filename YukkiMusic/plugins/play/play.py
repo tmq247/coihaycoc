@@ -217,7 +217,7 @@ async def play_commnd(
                 and not config.SPOTIFY_CLIENT_SECRET
             ):
                 return await mystic.edit_text(
-                    "This bot isn't able to play spotify queries. Please ask my owner to enable spotify."
+                    "Bot này không thể phát các truy vấn spotify. Vui lòng yêu cầu chủ sở hữu của tôi bật spotify."
                 )
             if "track" in url:
                 try:
@@ -338,11 +338,11 @@ async def play_commnd(
                 await Yukki.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(
-                    "There's an issue with the bot. Please report it to my owner and ask them to check logger group."
+                    "Đã xảy ra sự cố với bot. Vui lòng báo cáo với chủ sở hữu của tôi và yêu cầu họ kiểm tra nhóm logger."
                 )
                 return await app.send_message(
                     config.LOG_GROUP_ID,
-                    "Please turn on Voice Chat.. Bot is not able to stream urls..",
+                    "Vui lòng bật Trò chuyện thoại.. Bot không thể truyền phát url..",
                 )
             except Exception as e:
                 return await mystic.edit_text(
@@ -485,7 +485,7 @@ async def play_commnd(
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
                 return await play_logs(
-                    message, streamtype=f"Searched on Youtube"
+                    message, streamtype=f"Đã tìm kiếm trên Youtube"
                 )
             else:
                 buttons = track_markup(
@@ -502,7 +502,7 @@ async def play_commnd(
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
                 return await play_logs(
-                    message, streamtype=f"URL Searched Inline"
+                    message, streamtype=f"URL được tìm kiếm nội tuyến"
                 )
 
 
@@ -591,7 +591,7 @@ async def play_music(client, CallbackQuery, _):
 async def anonymous_check(client, CallbackQuery):
     try:
         await CallbackQuery.answer(
-            "You're an Anonymous Admin\n\nGo to your group's setting \n-> Administrators List \n-> Click on your name \n-> uncheck REMAIN ANONYMOUS button there.",
+            "Bạn là Quản trị viên Ẩn danh\n\nChuyển đến cài đặt nhóm của bạn \n-> Danh sách Quản trị viên \n-> Nhấp vào tên của bạn \n-> bỏ chọn nút REMAIN ANONYMOUS ở đó.",
             show_alert=True,
         )
     except:
