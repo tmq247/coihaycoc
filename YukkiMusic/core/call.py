@@ -295,15 +295,15 @@ class Call(PyTgCalls):
                 )
             except Exception as e:
                 raise AssistantErr(
-                    "**No Active Voice Chat Found**\n\nPlease make sure group's voice chat is enabled. If already enabled, please end it and start fresh voice chat again and if the problem continues, try /restart"
+                    "**Không tìm thấy trò chuyện thoại đang hoạt động**\n\nHãy đảm bảo rằng trò chuyện thoại của nhóm được bật. Nếu đã được bật, vui lòng kết thúc và bắt đầu lại trò chuyện thoại mới và nếu sự cố vẫn tiếp diễn, hãy thử /restart"
                 )
         except AlreadyJoinedError:
             raise AssistantErr(
-                "**Assistant Already in Voice Chat**\n\nSystems have detected that assistant is already there in the voice chat, this issue generally comes when you play 2 queries together.\n\nIf assistant is not present in voice chat, please end voice chat and start fresh voice chat again and if the  problem continues, try /restart"
+                "**Trợ lý đã có trong cuộc trò chuyện thoại**\n\nCác hệ thống đã phát hiện ra rằng trợ lý đã có trong cuộc trò chuyện thoại, vấn đề này thường xảy ra khi bạn thực hiện 2 truy vấn cùng nhau.\n\nNếu trợ lý không có mặt trong cuộc trò chuyện thoại, vui lòng kết thúc cuộc trò chuyện thoại và bắt đầu lại trò chuyện thoại mới và nếu sự cố vẫn tiếp diễn, hãy thử /restart"
             )
         except TelegramServerError:
             raise AssistantErr(
-                "**Telegram Server Error**\n\nTelegram is having some internal server problems, Please try playing again.\n\n If this problem keeps coming everytime, please end your voice chat and start fresh voice chat again."
+                "**Lỗi Máy chủ Telegram**\n\nTelegram đang gặp một số sự cố máy chủ nội bộ, Vui lòng thử phát lại.\n\n Nếu sự cố này liên tục xảy ra, vui lòng kết thúc cuộc trò chuyện thoại của bạn và bắt đầu lại cuộc trò chuyện thoại mới."
             )
         await add_active_chat(chat_id)
         await mute_off(chat_id)
