@@ -50,7 +50,7 @@ async def reload_admin_cache(client, message: Message, _):
         await message.reply_text(_["admin_20"])
     except:
         await message.reply_text(
-            "Failed to reload admincache. Make sure Bot is admin in your chat."
+            "Không thể tải lại admincache. Đảm bảo Bot là quản trị viên trong cuộc trò chuyện của bạn."
         )
 
 
@@ -63,7 +63,7 @@ async def reload_admin_cache(client, message: Message, _):
 @AdminActual
 async def restartbot(client, message: Message, _):
     mystic = await message.reply_text(
-        f"Please Wait.. Restarting {MUSIC_BOT_NAME} for your chat.."
+        f"Vui lòng đợi.. Đang khởi động lại {MUSIC_BOT_NAME} cho cuộc trò chuyện của bạn.."
     )
     await asyncio.sleep(1)
     try:
@@ -83,7 +83,7 @@ async def restartbot(client, message: Message, _):
         except:
             pass
     return await mystic.edit_text(
-        "Successfully restarted. Try playing now.."
+        "Đã khởi động lại thành công. Hãy thử lại ngay bây giờ.."
     )
 
 
@@ -114,11 +114,11 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
     task = lyrical.get(message_id)
     if not task:
         return await CallbackQuery.answer(
-            "Downloading already Completed.", show_alert=True
+            "Quá trình tải xuống đã hoàn tất.", show_alert=True
         )
     if task.done() or task.cancelled():
         return await CallbackQuery.answer(
-            "Downloading already Completed or Cancelled.",
+            "Quá trình tải xuống đã hoàn tất hoặc đã bị hủy.",
             show_alert=True,
         )
     if not task.done():
@@ -129,15 +129,15 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
             except:
                 pass
             await CallbackQuery.answer(
-                "Downloading Cancelled", show_alert=True
+                "Đã hủy tải xuống", show_alert=True
             )
             return await CallbackQuery.edit_message_text(
-                f"Download Cancelled by {CallbackQuery.from_user.mention}"
+                f"Tải xuống bị hủy bởi {CallbackQuery.from_user.mention}"
             )
         except:
             return await CallbackQuery.answer(
-                "Failed to stop the Downloading.", show_alert=True
+                "Không dừng được Tải xuống.", show_alert=True
             )
     await CallbackQuery.answer(
-        "Failed to recognize the running task", show_alert=True
+        "Không thể nhận ra tác vụ đang chạy", show_alert=True
     )
