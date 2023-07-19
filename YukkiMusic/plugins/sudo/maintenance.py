@@ -38,7 +38,7 @@ async def maintenance(client, message: Message):
     if state == "enable":
         if await is_maintenance() is False:
             await message.reply_text(
-                "Maintenance mode is already enabled"
+                "Chế độ bảo trì đã được bật"
             )
         else:
             await maintenance_on()
@@ -49,7 +49,7 @@ async def maintenance(client, message: Message):
             await message.reply_text(_["maint_3"])
         else:
             await message.reply_text(
-                "Maintenance mode is already disabled"
+                "Chế độ bảo trì đã bị tắt"
             )
     else:
         await message.reply_text(usage)
