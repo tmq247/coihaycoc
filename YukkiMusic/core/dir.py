@@ -17,7 +17,7 @@ from ..logging import LOGGER
 def dirr():
     if "assets" not in listdir():
         LOGGER(__name__).warning(
-            f"Assets Folder not Found. Please clone repository again."
+            f"Không tìm thấy thư mục nội dung. Vui lòng sao chép lại kho lưu trữ."
         )
         sys.exit()
     for file in os.listdir():
@@ -30,4 +30,4 @@ def dirr():
         mkdir("downloads")
     if "cache" not in listdir():
         mkdir("cache")
-    LOGGER(__name__).info("Directories Updated.")
+    LOGGER(__name__).info("Thư mục được cập nhật.")
