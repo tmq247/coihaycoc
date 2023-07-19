@@ -24,7 +24,7 @@ ACTIVEVIDEO_COMMAND = get_command("ACTIVEVIDEO_COMMAND")
 @app.on_message(filters.command(ACTIVEVC_COMMAND) & SUDOERS)
 async def activevc(_, message: Message):
     mystic = await message.reply_text(
-        "Getting active voice chats.. Please hold"
+        "Nhận các cuộc trò chuyện bằng giọng nói tích cực.. Vui lòng giữ"
     )
     served_chats = await get_active_chats()
     text = ""
@@ -33,7 +33,7 @@ async def activevc(_, message: Message):
         try:
             title = (await app.get_chat(x)).title
         except Exception:
-            title = "Private Group"
+            title = "Nhóm riêng"
         if (await app.get_chat(x)).username:
             user = (await app.get_chat(x)).username
             text += f"<b>{j + 1}.</b>  [{title}](https://t.me/{user})[`{x}`]\n"
@@ -41,10 +41,10 @@ async def activevc(_, message: Message):
             text += f"<b>{j + 1}. {title}</b> [`{x}`]\n"
         j += 1
     if not text:
-        await mystic.edit_text("No Active Voice Chats")
+        await mystic.edit_text("Không có cuộc trò chuyện thoại nào đang hoạt động")
     else:
         await mystic.edit_text(
-            f"**Active Voice Chats:-**\n\n{text}",
+            f"**Trò chuyện bằng giọng nói đang hoạt động:-**\n\n{text}",
             disable_web_page_preview=True,
         )
 
@@ -52,7 +52,7 @@ async def activevc(_, message: Message):
 @app.on_message(filters.command(ACTIVEVIDEO_COMMAND) & SUDOERS)
 async def activevi_(_, message: Message):
     mystic = await message.reply_text(
-        "Getting active video chats.. Please hold"
+        "Đang trò chuyện video tích cực.. Vui lòng giữ"
     )
     served_chats = await get_active_video_chats()
     text = ""
@@ -61,7 +61,7 @@ async def activevi_(_, message: Message):
         try:
             title = (await app.get_chat(x)).title
         except Exception:
-            title = "Private Group"
+            title = "Nhóm riêng"
         if (await app.get_chat(x)).username:
             user = (await app.get_chat(x)).username
             text += f"<b>{j + 1}.</b>  [{title}](https://t.me/{user})[`{x}`]\n"
@@ -69,7 +69,7 @@ async def activevi_(_, message: Message):
             text += f"<b>{j + 1}. {title}</b> [`{x}`]\n"
         j += 1
     if not text:
-        await mystic.edit_text("No Active Voice Chats")
+        await mystic.edit_text("Không có cuộc trò chuyện thoại nào đang hoạt động")
     else:
         await mystic.edit_text(
             f"**Active Video Calls:-**\n\n{text}",
