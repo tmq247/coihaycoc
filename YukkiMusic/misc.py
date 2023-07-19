@@ -48,7 +48,7 @@ XCB = [
 def dbb():
     global db
     db = {}
-    LOGGER(__name__).info(f"Database Initialized.")
+    LOGGER(__name__).info(f"Khởi tạo cơ sở dữ liệu.")
 
 
 def sudo():
@@ -86,5 +86,5 @@ def heroku():
                 LOGGER(__name__).info(f"Heroku App Configured")
             except BaseException:
                 LOGGER(__name__).warning(
-                    f"Please make sure your Heroku API Key and Your App name are configured correctly in the heroku."
+                    f"Vui lòng đảm bảo Khóa API Heroku và Tên ứng dụng của bạn được định cấu hình chính xác trong heroku."
                 )
