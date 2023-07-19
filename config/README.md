@@ -1,117 +1,114 @@
 # Yukki Music Bot Configs
 
-Config vars are basically the variables which configure or modify bot to function, which are the basic necessities of plugins or code to work. You have to set the proper mandatory vars to make it functional and to start the basic feature of bot.
+Các vars cấu hình về cơ bản là các biến định cấu hình hoặc sửa đổi bot để hoạt động, là những điều cơ bản cần thiết để plugin hoặc mã hoạt động. Bạn phải đặt các lọ bắt buộc phù hợp để làm cho nó hoạt động và bắt đầu tính năng cơ bản của bot.
 
-### Get to know about all these vars in depth from our Docs. [Read Now from Here](https://notreallyshikhar.gitbook.io/yukkimusicbot/config-vars/available-vars)
+### Tìm hiểu sâu về tất cả các lọ này từ Tài liệu của chúng tôi. [Read Now from Here](https://notreallyshikhar.gitbook.io/yukkimusicbot/config-vars/available-vars)
 
 ## Mandatory Vars
 
-- These are the minimum required vars need to setup to make Yukki Music Bot functional.
+- Đây là những lọ tối thiểu bắt buộc phải thiết lập để Yukki Music Bot hoạt động.
 
-1. `API_ID` : Get it from my.telegram.org 
-2. `API_HASH`  : Get it from my.telegram.org 
-3. `BOT_TOKEN` : Get it from [@Botfather](http://t.me/BotFather) in Telegram
-4. `MONGO_DB_URI` : Get mongo db [from here.](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
-5. `LOG_GROUP_ID` : You'll need a Private Group ID for this. Supergroup Needed with id starting from -100 
-6. `MUSIC_BOT_NAME` : A name for your Music bot.
-7. `OWNER_ID` : Your Owner ID for managing your bot.
-8. `STRING_SESSION` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-
+1. `API_ID` : Lấy từ my.telegram.org
+2. `API_HASH` : Lấy từ my.telegram.org
+3. `BOT_TOKEN` : Nhận từ [@Botfather](http://t.me/BotFather) trong Telegram
+4. `MONGO_DB_URI` : Nhận mongo db [từ đây.](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/mongodb)
+5. `LOG_GROUP_ID` ​​: Bạn sẽ cần ID nhóm riêng cho việc này. Cần có siêu nhóm với id bắt đầu từ -100
+6. `MUSIC_BOT_NAME` : Tên cho bot Âm nhạc của bạn.
+7. `OWNER_ID` : ID chủ sở hữu để quản lý bot của bạn.
+8. `STRING_SESSION` : Cần phiên Pyrogram, tạo chuỗi từ [@YukkiStringBot](http://t.me/YukkiStringBot) trong Telegram.
 
 ## Non-Mandatory Vars
 
-- These are the extra vars for extra features inside Music Bot. You can leave non mandatory vars for now and can add them later.
+- Đây là các lọ bổ sung cho các tính năng bổ sung bên trong Music Bot. Bạn có thể để lại các lọ không bắt buộc ngay bây giờ và có thể thêm chúng sau.
 
-1. `DURATION_LIMIT` : Custom max audio(music) duration for voice chat. Default to 60 mins.
-2. `SONG_DOWNLOAD_DURATION_LIMIT`  : Duration Limit for downloading Songs in MP3 or MP4 format from bot. Default to 180 mins.
-3. `VIDEO_STREAM_LIMIT` : Maximum number of video calls allowed on bot. You can later set it via /set_video_limit on telegram. Default to 3 chats.
-4. `SERVER_PLAYLIST_LIMIT` : Maximum Limit Allowed for users to save playlists on bot's server. Default to 30
-5. `PLAYLIST_FETCH_LIMIT` :  Maximum limit for fetching playlist's track from youtube, spotify, apple links. Default to 25
-6. `CLEANMODE_MINS` : Cleanmode time after which bot will delete its old messages from chats. Default to 5 Mins.
-7. `SUPPORT_CHANNEL` : If you've any channel for your music bot , fill it with your channel link
-8. `SUPPORT_GROUP` : If you've any group support for your music bot , fill it with your group link
+1. `DURATION_LIMIT` : Thời lượng âm thanh (nhạc) tối đa tùy chỉnh cho trò chuyện thoại. Mặc định là 60 phút.
+2. `SONG_DOWNLOAD_DURATION_LIMIT` : Giới hạn thời lượng tải Bài hát ở định dạng MP3 hoặc MP4 từ bot. Mặc định là 180 phút.
+3. `VIDEO_STREAM_LIMIT` : Số cuộc gọi video tối đa được phép trên bot. Sau đó, bạn có thể đặt nó qua /set_video_limit trên telegram. Mặc định là 3 cuộc trò chuyện.
+4. `SERVER_PLAYLIST_LIMIT` : Giới hạn tối đa Cho phép người dùng lưu danh sách phát trên máy chủ của bot. Mặc định là 30
+5. `PLAYLIST_FETCH_LIMIT` : Giới hạn tối đa cho việc tìm nạp bản nhạc của danh sách phát từ liên kết youtube, spotify, apple. Mặc định là 25
+6. `CLEANMODE_MINS` : Thời gian Cleanmode sau đó bot sẽ xóa các tin nhắn cũ của nó khỏi các cuộc trò chuyện. Mặc định là 5 phút.
+7. `SUPPORT_CHANNEL` : Nếu bạn có bất kỳ kênh nào cho bot âm nhạc của mình, hãy điền vào kênh đó bằng liên kết kênh của bạn
+8. `SUPPORT_GROUP` : Nếu bạn có bất kỳ nhóm hỗ trợ nào cho bot âm nhạc của mình, hãy điền vào đó bằng liên kết nhóm của bạn
 
 ## Play FileSize Limit Vars
 
-- Maximum File size limit for the audio and videos that a user can play from your bot. [Only Bytes Size Accepted]
-> You can convert mb into bytes from https://www.gbmb.org/mb-to-bytes and use it here 
+- Giới hạn kích thước tệp tối đa cho âm thanh và video mà người dùng có thể phát từ bot của bạn. [Chỉ chấp nhận kích thước byte]
+> Bạn có thể chuyển đổi mb thành byte từ https://www.gbmb.org/mb-to-bytes và sử dụng tại đây
 
-1. `TG_AUDIO_FILESIZE_LIMIT` : Maximum file size limit for audio files which can be streamed over vc. Defaults to 104857600 bytes, i.e. 100MB
-2. `TG_VIDEO_FILESIZE_LIMIT` : Maximum file size limit for video files which can be played. Defaults to 1073741824 bytes, i.e. 1024MB or 1GB
-
+1. `TG_AUDIO_FILESIZE_LIMIT` : Giới hạn kích thước tệp tối đa cho các tệp âm thanh có thể được phát trực tuyến qua vc. Mặc định là 104857600 byte, tức là 100MB
+2. `TG_VIDEO_FILESIZE_LIMIT` : Giới hạn kích thước tệp tối đa cho tệp video có thể phát. Mặc định là 1073741824 byte, tức là 1024MB hoặc 1GB
 
 ## Bot Vars
 
-- These all vars are used for setting up bot. You can edit these vars if you want , else leave all of them as it is.
+- Tất cả các lọ này được sử dụng để thiết lập bot. Bạn có thể chỉnh sửa các lọ này nếu muốn, nếu không thì hãy để nguyên tất cả chúng.
 
-1. `PRIVATE_BOT_MODE` : Set it `True` if you want your bot to be private only or False for all groups. Default to False
-2. `YOUTUBE_EDIT_SLEEP` : Time sleep duration For Youtube Downloader. Default to 3 seconds
-3. `TELEGRAM_EDIT_SLEEP` : Time sleep duration For Telegram Downloader. Default to 5 seconds
-4. `AUTO_LEAVING_ASSISTANT` : Set it in `True` if you want to leave your assistant after a certain amount of time.
-5. `ASSISTANT_LEAVE_TIME` : Time after which your assistant account will leave served chats automatically. Default to 5400 seconds, i.e 90 Mins
-6. `AUTO_DOWNLOADS_CLEAR` : Set it `True` if you want to delete downloads after the music playout ends. 
-7. `AUTO_SUGGESTION_MODE` : Set it `True` if you want to bot to suggest about bot commands to random chats of your bots. 
-9. `AUTO_SUGGESTION_TIME` : Time after which your bot will suggest random 1/10 chats of your served chats about bot commands. Default to 5400 seconds, i.e 90 Mins
-10. `SET_CMDS` : Set it to `True` if you want your bot to set the commands for chat menu automatically. [Reference](https://i.postimg.cc/Bbg3LQTG/image.png)
+1. `PRIVATE_BOT_MODE` : Đặt là `True` nếu bạn muốn bot của mình chỉ ở chế độ riêng tư hoặc Sai cho tất cả các nhóm. Mặc định là Sai
+2. `YOUTUBE_EDIT_SLEEP` : Thời lượng ngủ cho Trình tải xuống Youtube. Mặc định là 3 giây
+3. `TELEGRAM_EDIT_SLEEP` : Thời lượng ngủ cho Telegram Downloader. Mặc định là 5 giây
+4. `AUTO_LEAVING_ASSISTANT` : Đặt thành `True` nếu bạn muốn rời khỏi trợ lý của mình sau một khoảng thời gian nhất định.
+5. `ASSISTANT_LEAVE_TIME` : Khoảng thời gian mà sau đó tài khoản trợ lý của bạn sẽ tự động rời khỏi các cuộc trò chuyện được cung cấp. Mặc định là 5400 giây, tức là 90 phút
+6. `AUTO_DOWNLOADS_CLEAR` : Đặt là `True` nếu bạn muốn xóa các bản tải xuống sau khi phát nhạc kết thúc.
+7. `AUTO_SUGGESTION_MODE` : Đặt nó là `True` nếu bạn muốn bot đề xuất các lệnh bot cho các cuộc trò chuyện ngẫu nhiên của các bot của bạn.
+9. `AUTO_SUGGESTION_TIME` : Thời gian sau đó bot của bạn sẽ đề xuất ngẫu nhiên 1/10 cuộc trò chuyện trong số các cuộc trò chuyện được phục vụ của bạn về các lệnh bot. Mặc định là 5400 giây, tức là 90 phút
+10. `SET_CMDS` : Đặt thành `True` nếu bạn muốn bot của mình tự động đặt các lệnh cho menu trò chuyện. [Tham khảo](https://i.postimg.cc/Bbg3LQTG/image.png)
 
 ## Spotify Vars
 
-- You can play tracks or playlists from spotify from Yukki Music bot
-- You'll need these two vars to make spotify play working. This is not essential , you can leave them blank if you want.
-
+- Bạn có thể phát các bản nhạc hoặc danh sách phát từ spotify từ bot Yukki Music
+- Bạn sẽ cần hai lọ này để làm cho spotify play hoạt động. Điều này không cần thiết, bạn có thể để trống nếu muốn.
+  
 ### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/spotify)
 
 
-1. `SPOTIFY_CLIENT_ID` : Get it from https://developer.spotify.com/dashboard 
-2. `SPOTIFY_CLIENT_SECRET` : Get it from https://developer.spotify.com/dashboard 
+1. `SPOTIFY_CLIENT_ID` : Lấy từ https://developer.spotify.com/dashboard
+2. `SPOTIFY_CLIENT_SECRET` : Lấy từ https://developer.spotify.com/dashboard
 
 
 ## Heroku Vars
 
-- To work some Heroku compatible modules, this var value required to Access your account to use `get_log`, `usage`, `update` etc etc commands.
-- You can fill this var using your API key or Authorization token.
+- Để làm việc với một số mô-đun tương thích với Heroku, cần có giá trị var này để Truy cập tài khoản của bạn để sử dụng các lệnh `get_log`, `usage`, `update`, v.v.
+- Bạn có thể điền vào biến này bằng cách sử dụng khóa API hoặc Mã thông báo ủy quyền của mình.
 
 ### How to get these? [Read from here](https://notreallyshikhar.gitbook.io/yukkimusicbot/config-vars/heroku-vars)
 
-1. `HEROKU_API_KEY` : Get it from http://dashboard.heroku.com/account 
-2. `HEROKU_APP_NAME` : You have to Enter the app name which you gave to identify your Music Bot in Heroku. 
-
+1. `HEROKU_API_KEY` : Lấy từ http://dashboard.heroku.com/account
+2. `HEROKU_APP_NAME` : Bạn phải Nhập tên ứng dụng mà bạn đã cung cấp để xác định Music Bot của bạn trong Heroku.
 
 ## Custom Repo Vars
 
-- If you plan to use Yukki Music Bot with your own customized or modified code.
+- Nếu bạn định sử dụng Yukki Music Bot với mã tùy chỉnh hoặc sửa đổi của riêng bạn.
 
-1. `UPSTREAM_REPO` : Your Upstream Repo URL or Forked Repo.
-2. `UPSTREAM_BRANCH` : Default Branch of your Upstream Repo URL or Forked Repo. 
-3. `GIT_TOKEN` : Your GIT TOKEN if your upstream repo is private
-4. `GITHUB_REPO` : Your Github Repo url, that will be shown on /start command
+1. `UPSTREAM_REPO` : URL Repo ngược dòng hoặc Repo rẽ nhánh của bạn.
+2. `UPSTREAM_BRANCH` : Nhánh mặc định của URL Repo ngược dòng hoặc Repo rẽ nhánh của bạn.
+3. `GIT_TOKEN` : GIT TOKEN của bạn nếu repo ngược dòng của bạn ở chế độ riêng tư
+4. `GITHUB_REPO` : Url Github Repo của bạn, sẽ được hiển thị trên lệnh /start
 
 
 
 ## Images/Thumbnail Vars
 
-- You can change images which are used in Yukki Music Bot.
-- You can generate telegaph links from [@YukkiTelegraphBot](http://t.me/YukkiTelegraphBot) and use it here.
+- Bạn có thể thay đổi hình ảnh được sử dụng trong Yukki Music Bot.
+- Bạn có thể tạo liên kết điện báo từ [@YukkiTelegraphBot](http://t.me/YukkiTelegraphBot) và sử dụng tại đây.
 
-1. `START_IMG_URL` : Image which comes on /start command in private messages of bot.
-2. `PING_IMG_URL` : Image which comes on /ping command of bot.
-3. `PLAYLIST_IMG_URL` : Image which comes on /play command of bot. 
-4. `GLOBAL_IMG_URL` : Image which comes on /stats command of bot. 
-5. `STATS_IMG_URL` : Image which comes on /stats command of bot. 
-6. `TELEGRAM_AUDIO_URL` : This image comes when someone plays audios from telegram. 
-7. `TELEGRAM_VIDEO_URL` : This image comes when someone plays videos from telegram. 
-8. `STREAM_IMG_URL` : his image comes when someone plays m3u8 or index links.
-9. `SOUNCLOUD_IMG_URL` : This image comes when someone plays music from soundcloud. 
-10. `YOUTUBE_IMG_URL` : This image comes if thumbnail generator fails to gen thumb anyhow.
-11. `SPOTIFY_ARTIST_IMG_URL` : This image comes when someone plays Spotify artist via link in inline mode. 
-12. `SPOTIFY_ALBUM_IMG_URL` : This image comes when someone plays Spotify album via link in inline mode. 
-13. `SPOTIFY_PLAYLIST_IMG_URL` : This image comes when someone plays Spotify album via link in inline mode. 
+1. `START_IMG_URL` : Hình ảnh xuất hiện trên lệnh /start trong tin nhắn riêng tư của bot.
+2. `PING_IMG_URL` : Hình ảnh xuất hiện trên lệnh /ping của bot.
+3. `PLAYLIST_IMG_URL` : Hình ảnh xuất hiện trên lệnh /play của bot.
+4. `GLOBAL_IMG_URL` : Hình ảnh xuất hiện trên lệnh /stats của bot.
+5. `STATS_IMG_URL` : Hình ảnh xuất hiện trên lệnh /stats của bot.
+6. `TELEGRAM_AUDIO_URL` : Hình ảnh này xuất hiện khi ai đó phát âm thanh từ telegram.
+7. `TELEGRAM_VIDEO_URL` : Hình ảnh này xuất hiện khi ai đó phát video từ telegram.
+8. `STREAM_IMG_URL` : hình ảnh của anh ấy xuất hiện khi ai đó chơi m3u8 hoặc liên kết chỉ mục.
+9. `SOUNCLOUD_IMG_URL` : Hình ảnh này xuất hiện khi ai đó phát nhạc từ soundcloud.
+10. `YOUTUBE_IMG_URL` : Hình ảnh này xuất hiện nếu trình tạo hình thu nhỏ không thành công.
+11. `SPOTIFY_ARTIST_IMG_URL` : Hình ảnh này xuất hiện khi ai đó phát nghệ sĩ Spotify qua liên kết ở chế độ nội tuyến.
+12. `SPOTIFY_ALBUM_IMG_URL` : Hình ảnh này xuất hiện khi ai đó phát album Spotify qua liên kết ở chế độ nội tuyến.
+13. `SPOTIFY_PLAYLIST_IMG_URL` : Hình ảnh này xuất hiện khi ai đó phát album Spotify qua liên kết ở chế độ nội tuyến.
 
 ## Multi Assistant Mode
 
-- You can use upto 5 Assistant Clients ( allowing your bot to atleast work in 2000-2500 chats at a time )
+- Bạn có thể sử dụng tối đa 5 Trợ lý Khách hàng (cho phép bot của bạn hoạt động ít nhất trong 2000-2500 cuộc trò chuyện cùng một lúc)
 
-1. `STRING_SESSION2` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-2. `STRING_SESSION3` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-3. `STRING_SESSION4` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
-4. `STRING_SESSION5` : Pyrogram Session Needed, Generate string from [@YukkiStringBot](http://t.me/YukkiStringBot) in Telegram.
+1. `STRING_SESSION2` : Cần phiên Pyrogram, tạo chuỗi từ [@YukkiStringBot](http://t.me/YukkiStringBot) trong Telegram.
+2. `STRING_SESSION3` : Cần phiên Pyrogram, tạo chuỗi từ [@YukkiStringBot](http://t.me/YukkiStringBot) trong Telegram.
+3. `STRING_SESSION4` : Cần phiên Pyrogram, tạo chuỗi từ [@YukkiStringBot](http://t.me/YukkiStringBot) trong Telegram.
+4. `STRING_SESSION5` : Cần phiên Pyrogram, tạo chuỗi từ [@YukkiStringBot](http://t.me/YukkiStringBot) trong Telegram.
