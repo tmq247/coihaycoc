@@ -128,7 +128,7 @@ class TeleAPI:
                     [
                         [
                             InlineKeyboardButton(
-                                text="🚦 Cancel Downloading",
+                                text="🚦 Hủy tải xuống",
                                 callback_data="stop_downloading",
                             ),
                         ]
@@ -147,13 +147,13 @@ class TeleAPI:
                     completed_size = convert_bytes(current)
                     speed = convert_bytes(speed)
                     text = f"""
-**{MUSIC_BOT_NAME} Telegram Media Downloader**
+**{MUSIC_BOT_NAME} Trình tải xuống phương tiện Telegram**
 
-**Total FileSize:** {total_size}
-**Completed:** {completed_size} 
-**Percentage:** {percentage[:5]}%
+**Tổng kích thước tệp:** {total_size}
+**Hoàn thành:** {completed_size} 
+**Tỷ lệ hoàn thành :** {percentage[:5]}%
 
-**Speed:** {speed}/s
+**Tốc độ:** {speed}/s
 **ETA:** {eta}"""
                     try:
                         await mystic.edit_text(text, reply_markup=upl)
@@ -173,7 +173,7 @@ class TeleAPI:
                     progress=progress,
                 )
                 await mystic.edit_text(
-                    "Successfully Downloaded.. Processing file now"
+                    "Đã tải xuống thành công.. Đang xử lý tệp"
                 )
                 downloader.pop(message.message_id)
             except:
