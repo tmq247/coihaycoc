@@ -247,28 +247,28 @@ SONG_DOWNLOAD_DURATION_LIMIT = int(
 if SUPPORT_CHANNEL:
     if not re.match("(?:http|https)://", SUPPORT_CHANNEL):
         print(
-            "[ERROR] - URL SUPPORT_CHANNEL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+            "[LỖI] - URL SUPPORT_CHANNEL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
 if SUPPORT_GROUP:
     if not re.match("(?:http|https)://", SUPPORT_GROUP):
         print(
-            "[ERROR] - URL SUPPORT_GROUP của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+            "[LỖI] - URL SUPPORT_GROUP của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
 if UPSTREAM_REPO:
     if not re.match("(?:http|https)://", UPSTREAM_REPO):
         print(
-            "[ERROR] - Url UPSTREAM_REPO của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+            "[LỖI] - Url UPSTREAM_REPO của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
 if GITHUB_REPO:
     if not re.match("(?:http|https)://", GITHUB_REPO):
         print(
-            "[ERROR] - Url GITHUB_REPO của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+            "[LỖI] - Url GITHUB_REPO của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
         )
         sys.exit()
 
@@ -277,7 +277,7 @@ if PING_IMG_URL:
     if PING_IMG_URL != "assets/Ping.jpeg":
         if not re.match("(?:http|https)://", PING_IMG_URL):
             print(
-                "[ERROR] - Url PING_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url PING_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -285,7 +285,7 @@ if PLAYLIST_IMG_URL:
     if PLAYLIST_IMG_URL != "assets/Playlist.jpeg":
         if not re.match("(?:http|https)://", PLAYLIST_IMG_URL):
             print(
-                "[ERROR] - Url PLAYLIST_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url PLAYLIST_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -293,7 +293,7 @@ if GLOBAL_IMG_URL:
     if GLOBAL_IMG_URL != "assets/Global.jpeg":
         if not re.match("(?:http|https)://", GLOBAL_IMG_URL):
             print(
-                "[ERROR] - Url GLOBAL_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url GLOBAL_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -302,7 +302,7 @@ if STATS_IMG_URL:
     if STATS_IMG_URL != "assets/Stats.jpeg":
         if not re.match("(?:http|https)://", STATS_IMG_URL):
             print(
-                "[ERROR] - Url STATS_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url STATS_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -311,7 +311,7 @@ if TELEGRAM_AUDIO_URL:
     if TELEGRAM_AUDIO_URL != "assets/Audio.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_AUDIO_URL):
             print(
-                "[ERROR] - Url TELEGRAM_AUDIO_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url TELEGRAM_AUDIO_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -320,7 +320,7 @@ if STREAM_IMG_URL:
     if STREAM_IMG_URL != "assets/Stream.jpeg":
         if not re.match("(?:http|https)://", STREAM_IMG_URL):
             print(
-                "[ERROR] - Url STREAM_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url STREAM_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -329,7 +329,7 @@ if SOUNCLOUD_IMG_URL:
     if SOUNCLOUD_IMG_URL != "assets/Soundcloud.jpeg":
         if not re.match("(?:http|https)://", SOUNCLOUD_IMG_URL):
             print(
-                "[ERROR] - Url SOUNCLOUD_IMG_URL của bạn sai. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url SOUNCLOUD_IMG_URL của bạn sai. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -337,7 +337,7 @@ if YOUTUBE_IMG_URL:
     if YOUTUBE_IMG_URL != "assets/Youtube.jpeg":
         if not re.match("(?:http|https)://", YOUTUBE_IMG_URL):
             print(
-                "[ERROR] - Url YOUTUBE_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url YOUTUBE_IMG_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
@@ -346,13 +346,13 @@ if TELEGRAM_VIDEO_URL:
     if TELEGRAM_VIDEO_URL != "assets/Video.jpeg":
         if not re.match("(?:http|https)://", TELEGRAM_VIDEO_URL):
             print(
-                "[ERROR] - Url TELEGRAM_VIDEO_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
+                "[LỖI] - Url TELEGRAM_VIDEO_URL của bạn không đúng. Vui lòng đảm bảo rằng nó bắt đầu bằng https://"
             )
             sys.exit()
 
 
 if not MUSIC_BOT_NAME.isascii():
     print(
-        "[ERROR] - Bạn đã xác định sai MUSIC_BOT_NAME. Vui lòng không sử dụng bất kỳ ký tự đặc biệt hoặc phông chữ Đặc biệt nào cho điều này... Giữ cho nó đơn giản và nhỏ."
+        "[LỖI] - Bạn đã xác định sai MUSIC_BOT_NAME. Vui lòng không sử dụng bất kỳ ký tự đặc biệt hoặc phông chữ Đặc biệt nào cho điều này... Giữ cho nó đơn giản và nhỏ."
     )
     sys.exit()
