@@ -97,16 +97,16 @@ async def ping_com(client, message: Message, _):
         else:
             IMAGE = get_image(videoid)
     send = (
-        "**⌛️Duration:** Unknown Duration Stream\n\nClick on button below to get whole queued list."
+        "**⌛️Thời lượng:** Luồng thời lượng không xác định\n\nNhấp vào nút bên dưới để xem toàn bộ danh sách xếp hàng."
         if DUR == "Unknown"
-        else "\nClick on button below to get whole queued list."
+        else "\nNhấp vào nút bên dưới để có được toàn bộ danh sách xếp hàng."
     )
-    cap = f"""**{config.MUSIC_BOT_NAME} Player**
+    cap = f"""**{config.MUSIC_BOT_NAME} Người chơi**
 
-🎥**Playing:** {title}
+🎥**Đang chơi:** {title}
 
-🔗**Stream Type:** {typo}
-🙍‍♂️**Played By:** {user}
+🔗**Loại luồng:** {typo}
+🙍‍♂️**Chơi bởi:** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, "c" if cplay else "g", videoid)
@@ -203,11 +203,11 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
     for x in got:
         j += 1
         if j == 1:
-            msg += f'Currently Playing:\n\n🏷Title: {x["title"]}\nDuration: {x["dur"]}\nBy: {x["by"]}\n\n'
+            msg += f'Hiện đang phát:\n\n🏷Tiêu đề: {x["title"]}\nThời lượng: {x["dur"]}\nBy: {x["by"]}\n\n'
         elif j == 2:
-            msg += f'Queued:\n\n🏷Title: {x["title"]}\nDuration: {x["dur"]}\nBy: {x["by"]}\n\n'
+            msg += f'Hàng chờ:\n\n🏷Tiêu đề: {x["title"]}\nThời lượng: {x["dur"]}\nBy: {x["by"]}\n\n'
         else:
-            msg += f'🏷Title: {x["title"]}\nDuration: {x["dur"]}\nBy: {x["by"]}\n\n'
+            msg += f'🏷Tiêu đề: {x["title"]}\nThời lượng: {x["dur"]}\nBy: {x["by"]}\n\n'
     if "Queued" in msg:
         if len(msg) < 700:
             await asyncio.sleep(1)
@@ -277,16 +277,16 @@ async def queue_back(client, CallbackQuery: CallbackQuery, _):
         else:
             IMAGE = get_image(videoid)
     send = (
-        "**⌛️Duration:** Unknown Duration Stream\n\nClick on button below to get whole queued list."
+        "**⌛️Thời lượng:** Luồng thời lượng không xác định\n\nNhấp vào nút bên dưới để xem toàn bộ danh sách xếp hàng."
         if DUR == "Unknown"
-        else "\nClick on button below to get whole queued list."
+        else "\nNhấp vào nút bên dưới để có được toàn bộ danh sách hàng chờ."
     )
     cap = f"""**{config.MUSIC_BOT_NAME} Player**
 
-🎥**Playing:** {title}
+🎥**Đang phát:** {title}
 
-🔗**Stream Type:** {typo}
-🙍‍♂️**Played By:** {user}
+🔗**Loại luồng:** {typo}
+🙍‍♂️**Phát bởi:** {user}
 {send}"""
     upl = (
         queue_markup(_, DUR, cplay, videoid)
