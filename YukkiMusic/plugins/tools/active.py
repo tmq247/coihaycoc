@@ -72,6 +72,6 @@ async def activevi_(_, message: Message):
         await mystic.edit_text("Không có cuộc trò chuyện thoại nào đang hoạt động")
     else:
         await mystic.edit_text(
-            f"**Active Video Calls:-**\n\n{text}",
+            f"**Cuộc gọi video đang hoạt động:-**\n\n{text}",
             disable_web_page_preview=True,
         )
