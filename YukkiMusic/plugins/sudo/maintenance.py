@@ -49,7 +49,7 @@ async def maintenance(client, message: Message):
             await message.reply_text(_["maint_3"])
         else:
             await message.reply_text(
-                "Chế độ bảo trì đã bị tắt"
+                "Chế độ bảo trì đã được tắt"
             )
     else:
         await message.reply_text(usage)
