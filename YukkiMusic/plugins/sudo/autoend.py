@@ -22,7 +22,7 @@ AUTOEND_COMMAND = get_command("AUTOEND_COMMAND")
 
 @app.on_message(filters.command(AUTOEND_COMMAND) & SUDOERS)
 async def auto_end_stream(client, message):
-    usage = "**Cách sử dụng:**\n\n/tự động kết thúc [enable|disable]"
+    usage = "**Cách sử dụng:**\n\n/autoend [enable|disable]"
     if len(message.command) != 2:
         return await message.reply_text(usage)
     state = message.text.split(None, 1)[1].strip()
