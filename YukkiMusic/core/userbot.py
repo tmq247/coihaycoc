@@ -53,7 +53,7 @@ class Userbot(Client):
         )
 
     async def start(self):
-        LOGGER(__name__).info(f"Starting Assistant Clients")
+        LOGGER(__name__).info(f"Bắt đầu ứng dụng trợ lý khách hàng")
         if config.STRING1:
             await self.one.start()
             try:
@@ -65,11 +65,11 @@ class Userbot(Client):
             assistants.append(1)
             try:
                 await self.one.send_message(
-                    config.LOG_GROUP_ID, "Assistant Started"
+                    config.LOG_GROUP_ID, "Trợ lý đã bắt đầu"
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 1 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Tài khoản Trợ lý 1 không thể truy cập Nhóm nhật ký. Đảm bảo rằng bạn đã thêm trợ lý vào nhóm nhật ký của mình và được thăng cấp làm quản trị viên! "
                 )
                 sys.exit()
             get_me = await self.one.get_me()
@@ -100,7 +100,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 2 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Tài khoản Trợ lý 2 không thể truy cập Nhóm nhật ký. Đảm bảo rằng bạn đã thêm trợ lý vào nhóm nhật ký của mình và được thăng cấp làm quản trị viên! "
                 )
                 sys.exit()
             get_me = await self.two.get_me()
@@ -131,7 +131,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 3 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Tài khoản Trợ lý 3 không thể truy cập Nhóm nhật ký. Đảm bảo rằng bạn đã thêm trợ lý vào nhóm nhật ký của mình và được thăng cấp làm quản trị viên! "
                 )
                 sys.exit()
             get_me = await self.three.get_me()
@@ -162,7 +162,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 4 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Tài khoản Trợ lý 4 không thể truy cập Nhóm nhật ký. Đảm bảo rằng bạn đã thêm trợ lý vào nhóm nhật ký của mình và được thăng cấp làm quản trị viên! "
                 )
                 sys.exit()
             get_me = await self.four.get_me()
@@ -193,7 +193,7 @@ class Userbot(Client):
                 )
             except:
                 LOGGER(__name__).error(
-                    f"Assistant Account 5 has failed to access the log Group. Make sure that you have added your assistant to your log group and promoted as admin! "
+                    f"Tài khoản Trợ lý 5 không thể truy cập Nhóm nhật ký. Đảm bảo rằng bạn đã thêm trợ lý vào nhóm nhật ký của mình và được thăng cấp làm quản trị viên! "
                 )
                 sys.exit()
             get_me = await self.five.get_me()
